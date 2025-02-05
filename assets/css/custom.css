@@ -1,0 +1,22 @@
+.modal-fullscreen {
+    top:0px !important;
+  min-width: 100% !important;
+  height: 100%;
+  margin: 0;
+  z-index: 9999;
+ position: absolute;
+}
+
+.modal-fullscreen .modal-dialog {
+  min-width: 100% !important;
+  height: 100%;
+  top:0px !important;
+  margin: 0;
+}
+
+.modal-fullscreen .modal-content {
+  min-width: 100% !important;
+  height: 100%;
+  top:0px !important;
+  border-radius: 0;
+}

@@ -1,0 +1,14 @@
+RewriteEngine On
+
+# Redirect HTTP to HTTPS uncomment 2lines after upon deployment
+#RewriteCond %{HTTPS} !=on
+#RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# CodeIgniter URL Routing
+# RewriteBase /sas_admin  # Uncomment this line if needed
+
+RewriteEngine On
+RewriteBase /region1
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?/$1 [L]
